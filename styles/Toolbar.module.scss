@@ -1,0 +1,31 @@
+.Toolbar {
+  width: 95%;
+  max-width: 800px;
+  height: 5rem;
+  // border: 1px solid lightgray;
+  background-color: rgb(56, 56, 56);
+  box-shadow: 0 3px 2px #545454;
+  border-radius: 5px;
+  // box-shadow: 0 2px px lightgray;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  > * {
+    margin: 0 0.5rem;
+  }
+}
+
+.Colorpicker {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  background-color: #0d131b;
+  border-radius: 5px;
+}
