@@ -8,6 +8,7 @@ interface ContextValue {
   replayDrawnLines: () => void;
 }
 
+// TODO: Rewrite to use requestAnimationFrame
 const replayDrawnLines = async (ctx: CanvasRenderingContext2D, drawnLines: DrawnLines) => {
   for (let x = 0; x < drawnLines.length; x++) {
     const completeLine = drawnLines[x];
