@@ -15,6 +15,7 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  user-select: none;
 
   > * {
     margin: 0 0.5rem;
