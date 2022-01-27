@@ -29,4 +29,10 @@
   padding: 0.5rem;
   background-color: #0d131b;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: 1rem;
+  }
 }

@@ -1,4 +1,4 @@
-export const setCursor = (style: "drawing" | "normal") => {
+export const setCursor = (style: "drawing" | "normal" | "pointer") => {
   const body = document.querySelector("body")!;
 
   switch (style) {
@@ -11,6 +11,9 @@ export const setCursor = (style: "drawing" | "normal") => {
       break;
     case "normal":
       body.style.cursor = "default";
+      break;
+    case "pointer":
+      body.style.cursor = "pointer";
       break;
   }
 };
