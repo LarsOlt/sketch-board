@@ -1,6 +1,9 @@
 {
-  "name": "my-app",
+  "name": "sketch-board",
   "private": true,
+  "author": {
+    "name": "Lars Öltjenbruns"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
