@@ -1,5 +1,6 @@
+# Sketch to Your heart's content!
+
 ![Application Overview](./screenshots/hero.png)
-Sketch to Your heart's content!
 
 ## Features
 
