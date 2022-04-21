@@ -19,7 +19,7 @@ interface CanvasSettings {
 
 export const canvasSettings: CanvasSettings = {
   drawingColor: "yellow",
-  drawingSize: 4,
+  drawingSize: 1,
   replaySpeed: 1,
 };
 
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.Home}>
       <Head>
-        <title>Valorant Canvas</title>
+        <title>Sketch Board</title>
       </Head>
       <ToolbarProvider>
         <Canvas />

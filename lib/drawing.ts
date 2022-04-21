@@ -5,7 +5,7 @@ import { setCursor } from "./utils";
 type MousePosition = { x: number; y: number };
 export type DrawnLines = { lines: MousePosition[]; canvasSettings: typeof canvasSettings }[];
 
-export const drawing = (ctx: CanvasRenderingContext2D) => {
+export const enableDrawing = (ctx: CanvasRenderingContext2D) => {
   const mousePosition: MousePosition = { x: 0, y: 0 };
   const { canvas } = ctx;
   const drawnLines: DrawnLines = [];

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useEffect } from "react";
 import { ToolbarContext } from "./canvas-context";
-import { drawing } from "./drawing";
+import { enableDrawing } from "./drawing";
 
 const Canvas: React.FC = () => {
   const toolbarContext = useContext(ToolbarContext);
@@ -11,8 +11,8 @@ const Canvas: React.FC = () => {
   const resizeCanvas = () => {
     if (!canvasRef.current) return;
 
-    canvasRef.current.width = window.innerWidth;
-    canvasRef.current.height = window.innerHeight;
+    canvasRef.current.width = document.body.clientWidth;
+    canvasRef.current.height = document.body.clientHeight;
   };
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Canvas: React.FC = () => {
 
     toolbarContext.setCtx(ctx);
 
-    drawing(ctx);
+    enableDrawing(ctx);
 
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
