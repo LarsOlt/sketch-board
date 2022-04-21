@@ -18,7 +18,7 @@ const Slider: React.FC<SliderProps> = ({ labelText, ...rest }) => {
   );
 };
 
-const Overlay: React.FC = (props) => {
+const Toolbar: React.FC = (props) => {
   const { clearCanvas, replayDrawnLines } = useContext(ToolbarContext);
 
   const onColorChange: ColorChangeHandler = (data) => {
@@ -63,15 +63,8 @@ const Overlay: React.FC = (props) => {
       </div>
       <div className={styles.Colorpicker}>
         <CirclePicker onChange={onColorChange} />
-        <button
-          onClick={() => {
-            canvasSettings.drawingEnabled = !canvasSettings.drawingEnabled;
-          }}
-        >
-          Toggle Drawing
-        </button>
       </div>
     </>
   );
 };
-export default Overlay;
+export default Toolbar;

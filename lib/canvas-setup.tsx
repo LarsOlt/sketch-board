@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { useEffect } from "react";
-import { canvasSettings } from "../pages";
 import { ToolbarContext } from "./canvas-context";
-import { dragAndDrop } from "./drag-and-drop";
 import { drawing } from "./drawing";
 
 const Canvas: React.FC = () => {
@@ -23,19 +21,12 @@ const Canvas: React.FC = () => {
 
     toolbarContext.setCtx(ctx);
 
-    const { enableDrawing, disableDrawing } = drawing(ctx);
-
-    if (canvasSettings.drawingEnabled) {
-      enableDrawing();
-    }
-
-    dragAndDrop(ctx);
+    drawing(ctx);
 
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
     return () => {
       window.removeEventListener("resize", resizeCanvas);
-      disableDrawing();
     };
   }, [toolbarContext]);
 

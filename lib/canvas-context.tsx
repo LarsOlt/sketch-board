@@ -20,7 +20,6 @@ const replayDrawnLines = async (ctx: CanvasRenderingContext2D, drawnLines: Drawn
 
       ctx.beginPath();
       ctx.strokeStyle = completeLine.canvasSettings.drawingColor;
-      ctx.lineWidth = completeLine.canvasSettings.drawingSize;
       ctx.moveTo(position.x, position.y);
 
       const nextPosition = completeLine.lines[i + 1];
