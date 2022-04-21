@@ -2,6 +2,8 @@
 
 ![Application Overview](./screenshots/hero.png)
 
+[Click here to try it out!](https://larsolt.github.io/sketch-board/)
+
 ## Features
 
 - Replay your previous drawing
