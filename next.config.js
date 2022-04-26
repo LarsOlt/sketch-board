@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: "/sketch-board/",
+  assetPrefix: "/sketch-board",
   basePath: "/sketch-board",
 };
 
